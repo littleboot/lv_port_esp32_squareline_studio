@@ -1,0 +1,1 @@
+(Get-Content -Raw CMakeLists.txt) -replace 'add_library.*', 'idf_component_register(SRCS ${SOURCES} REQUIRES lvgl)' | Set-Content -NoNewLine CMakeLists.txt
