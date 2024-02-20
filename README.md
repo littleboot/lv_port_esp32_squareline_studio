@@ -25,7 +25,26 @@ Design a GUI (you can also do this later, a empty gui is sufficient) and export 
 
 ![step 4](doc/img/run_fix_script.png)  
 
-
+Tip:
+You can also add a task to the VScode project folder that runs the script:
+Add this task to the `tasks.json` file located in the `.vscode` folder inside the project directory.
+```json
+{
+  "label": "Squareline UI export fix CMakeLists file",
+  "type": "shell",
+  "command": "powershell",
+  "args": [
+    "-NoProfile",
+    "-Command",
+    "cd \"${workspaceFolder}/components/ui\" ; ./fix_CMakeLists_file.ps1"
+  ],
+  "problemMatcher": []
+},
+```
+To run the task press F1:  
+![Run task](doc/img/run_task_vscode.png)  
+click on the task:  
+![run cmakelists fix](doc/img/run_cmakelists_fix_task.png)  
 
 ### Step 5 (IDE specific)  
 You should now be able to compile the project with IDF V5.2.  
