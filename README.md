@@ -1,7 +1,7 @@
 # lv_port_esp32_squareline_studio
 LVGL (Light and Versatile Embedded Graphics Library ) example project for Espressif IDF (IoT Development Framework) version 5.2. That can be used in combination with SquareLine Studio (GUI based user interface design program) for generating firmware for ESP32 based boards.  
 
-Big thanks to Hiruna, I forked his project and implemented minor changes to make it work with the Sunton ESP32-2432S028 board
+Big thanks to [@hiruna](https://github.com/hiruna), I forked his project and implemented minor changes to make it work with the Sunton ESP32-2432S028 board
 
 ## How to use with Sunton esp32_2432S028 board?
 ### Step 1:
